@@ -5,7 +5,8 @@ body{
     background-color: white;
 }
 #img1{
+    height: 20%;
+    width: 20%;
     margin-top: 5%;
-    height: 10%;
-    width: 10%;
+    margin-left: 5%;
 }

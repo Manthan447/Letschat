@@ -1,13 +1,13 @@
 
 //ADD YOUR FIREBASE LINKS HERE
-
 var firebaseConfig = {
-      apiKey: "AIzaSyATcbEkKMMucSzvPVrXxuZW3qruvG3oRAU",
-      authDomain: "letschat-d1acc.firebaseapp.com",
-      projectId: "letschat-d1acc",
-      storageBucket: "letschat-d1acc.appspot.com",
-      messagingSenderId: "647223147699",
-      appId: "1:647223147699:web:580ec7d35a01bded7844c6"
+      apiKey: "AIzaSyCUGbaJlExG07j2JD1-By9HOpz7t8W711I",
+      authDomain: "doctorchatapp-ba759.firebaseapp.com",
+      databaseURL: "https://doctorchatapp-ba759.firebaseio.com",
+      projectId: "doctorchatapp-ba759",
+      storageBucket: "doctorchatapp-ba759.appspot.com",
+      messagingSenderId: "767644271649",
+      appId: "1:767644271649:web:d2eff59cb7a6c2989f4f60"
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);

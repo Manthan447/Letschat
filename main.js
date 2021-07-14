@@ -1,5 +1,5 @@
-function login(){
-    username = document.getElementById("log_in").value; 
-    localStorage.setItem("adduser", username)
+function adduser(){
+    Loginname = document.getElementById("log_in").value;
+    localStorage.setItem("login" , Loginname );
     window.location = "Room.html"
 }
