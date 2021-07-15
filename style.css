@@ -3,6 +3,9 @@ body{
 }
 #div_it{
     background-color: white;
+    margin-top: 8%;
+    margin-left: 8%;
+    height: 250px;
 }
 #img1{
     height: 20%;

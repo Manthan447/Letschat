@@ -25,3 +25,10 @@ function getData() {firebase.database().ref("/").on('value', function(snapshot) 
       //End code
       });});}
 getData();
+
+function add_the_room(){
+      therooms = document.getElementById("add_room").value;
+      firebase.database().ref("/").child(therooms).update({addroom : therooms})
+      localStorage.setItem("addroom" , therooms)
+      window.location = "letschat_room.html"
+}
