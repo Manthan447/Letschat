@@ -1,4 +1,3 @@
-
 //ADD YOUR FIREBASE LINKS HERE
 var firebaseConfig = {
       apiKey: "AIzaSyCUGbaJlExG07j2JD1-By9HOpz7t8W711I",
@@ -15,20 +14,28 @@ var firebaseConfig = {
     document.getElementById("updatename").innerHTML = "Welcome "+ get_the_name;
     
     function logout(){
+          localStorage.removeItem("login")
+          localStorage.removeItem("addroom")
           window.location = "index.html"
     }
 
 function getData() {firebase.database().ref("/").on('value', function(snapshot) {document.getElementById("output").innerHTML = "";snapshot.forEach(function(childSnapshot) {childKey  = childSnapshot.key;
        Room_names = childKey;
       //Start code
-
+      row = " <div id='"+Room_names+ "' class='room_name' onclick='Redirect(this.id)'>"+Room_names+"</div> <hr>"
+      document.getElementById("output").innerHTML += row;
       //End code
       });});}
 getData();
 
-function add_the_room(){
+function Redirect(name){
+localStorage.setItem("add_room" , name )
+window.location = "letschat_room.html"
+}
+
+function addthename(){
       therooms = document.getElementById("add_room").value;
       firebase.database().ref("/").child(therooms).update({addroom : therooms})
-      localStorage.setItem("addroom" , therooms)
+      localStorage.setItem("addroom" , therooms);
       window.location = "letschat_room.html"
 }
